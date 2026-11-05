@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7ebd1">
+<meta name="description" content="Royal Pearl Family Restaurant food and bar menus.">
+<title>Royal Pearl | Digital Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--maroon:#982f32;--red:#b53b3b;--cream:#f8edda;--gold:#d6ae72;--ink:#261c1b}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--cream)}
+body{margin:0;min-height:100vh;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream)}
+.page{max-width:760px;margin:auto;padding:22px 18px 30px}
+.brand-card{position:relative;overflow:hidden;text-align:center;padding:28px 20px 24px;background:#f8edd8;border:2px solid var(--maroon);outline:1px solid #d7a86b;outline-offset:-9px;box-shadow:0 12px 35px #6e34221a}
+.brand-card:before,.brand-card:after{content:"✧  ❧  ✧";display:block;color:#c58c55;letter-spacing:.35em;font-size:17px}
+.brand-card:after{margin-top:16px}
+.crest{width:76px;height:76px;margin:12px auto 8px;border:2px solid var(--red);border-radius:50%;display:grid;place-items:center;color:var(--maroon);font:700 35px "Cormorant Garamond",serif;position:relative}
+.crest:before{content:"";position:absolute;inset:6px;border:1px solid #c58c55;border-radius:50%}
+.brand-name{font:700 clamp(29px,7vw,43px)/1 "Cormorant Garamond",serif;letter-spacing:.08em;color:var(--maroon);margin:8px 0 2px}
+.brand-sub{font:italic 600 12px "Cormorant Garamond",serif;letter-spacing:.18em;color:#5a3430}
+.rule{height:1px;width:min(260px,70%);margin:18px auto;background:linear-gradient(90deg,transparent,#c58c55,transparent)}
+.tagline{font:600 11px "DM Sans",sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#8d5b43;margin:0}
+.heading{font:600 29px "Cormorant Garamond",serif;text-align:center;color:var(--maroon);margin:26px 0 14px}
+.menu-card{position:relative;margin:14px 0;padding:25px 20px 24px;background:#fff8eb;border:1px solid #d9b17b;box-shadow:0 8px 24px #6e342212;text-align:center}
+.menu-card:before{content:"";position:absolute;inset:8px;border:1px solid #e8cfaa;pointer-events:none}
+.menu-card.food{background:#fff8eb;color:var(--ink)}
+.menu-card.bar{background:radial-gradient(ellipse at 50% 0%,#383036 0,#211c22 70%);color:#f8edda;border:1px solid #bd9254}
+.menu-card.bar:before{border:1px solid #947044}
+.menu-kicker{position:relative;font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#9b6b48;margin:0 0 8px}
+.bar .menu-kicker{color:#d8b477}
+.menu-title{position:relative;font:600 clamp(36px,9vw,49px)/.95 "Cormorant Garamond",serif;letter-spacing:.06em;margin:0;color:var(--maroon)}
+.bar .menu-title{color:#e0bd7c}
+.menu-title span{display:block;font-style:italic;font-size:.72em;letter-spacing:.02em;margin-top:3px}
+.menu-desc{position:relative;max-width:390px;margin:15px auto 19px;font-size:13px;line-height:1.65;color:#66564a}
+.bar .menu-desc{color:#d6c9b8}
+.menu-button{position:relative;display:flex;align-items:center;justify-content:center;gap:11px;width:min(100%,330px);min-height:56px;margin:auto;padding:13px 20px;border:1px solid #9d3538;border-radius:3px;background:var(--maroon);color:#fff8eb;text-decoration:none;font-size:15px;font-weight:700;letter-spacing:.04em;box-shadow:0 5px 14px #3e1c1c24;transition:transform .2s,box-shadow .2s}
+.bar .menu-button{border-color:#c49a5c;background:#d4ad70;color:#211b1b}
+.menu-button:hover{transform:translateY(-2px);box-shadow:0 8px 20px #0003}
+.menu-button:focus-visible{outline:3px solid #d8a94f;outline-offset:4px}
+.button-mark{font-size:20px}
+footer{text-align:center;padding:20px 10px 0;color:#946f54;font-size:10px;letter-spacing:.22em}
+@media(min-width:650px){.page{padding:32px 26px 40px}.brand-card{padding:32px 24px 26px}.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.menu-card{margin:0;min-height:330px;display:flex;flex-direction:column;justify-content:center;padding:30px 20px}.menu-desc{flex:0 0 auto}}
+</style>
+</head>
+<body>
+<main class="page">
+  <section class="brand-card" aria-label="Royal Pearl Family Restaurant">
+    <div class="crest" aria-hidden="true">RP</div>
+    <h1 class="brand-name">ROYAL PEARL</h1>
+    <div class="brand-sub">FAMILY RESTAURANT</div>
+    <div class="rule"></div>
+    <p class="tagline">A menu for every moment</p>
+  </section>
+  <h2 class="heading">Explore Our Menu</h2>
+  <section class="menu-grid" aria-label="Choose a menu">
+    <article class="menu-card food">
+      <p class="menu-kicker">Freshly prepared · Made with care</p>
+      <h2 class="menu-title">FOOD<span>Menu</span></h2>
+      <p class="menu-desc">Discover starters, tandoori favourites, Chinese dishes, curries, biryanis and desserts.</p>
+      <a class="menu-button" href="menu.html?type=food"><span class="button-mark" aria-hidden="true">♨</span> View Food Menu</a>
+    </article>
+    <article class="menu-card bar">
+      <p class="menu-kicker">Raise a glass · Enjoy the moment</p>
+      <h2 class="menu-title">BAR<span>Menu</span></h2>
+      <p class="menu-desc">Browse spirits, beer, wine, cocktails and refreshing mocktails.</p>
+      <a class="menu-button" href="menu.html?type=bar"><span class="button-mark" aria-hidden="true">✧</span> View Bar Menu</a>
+    </article>
+  </section>
+  <footer>ROYAL PEARL · FAMILY RESTAURANT</footer>
+</main>
+</body>
+</html>
